@@ -1,0 +1,27 @@
+{
+  "update_url": "https://clients2.google.com/service/update2/crx",
+  "homepage_url":"https://chrisjune.dev",
+  "name": "Json Formatter",
+  "version": "1.0",
+  "manifest_version": 3,
+  "description": "Pretty-printing & copy selected json string text in one step!",
+  "author": "chirsjune",
+  "icons": {
+    "16":  "./icon/icon16.png",
+    "48":  "./icon/icon48.png",
+    "128": "./icon/icon128.png"
+  },
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage",
+    "contextMenus"
+  ],
+  "background": {
+    "service_worker": "background-wrapper.js"
+  },
+  "action": {},
+  "host_permissions": [
+    "*://*/*"
+  ]
+}
